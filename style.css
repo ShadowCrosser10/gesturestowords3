@@ -1,0 +1,41 @@
+body
+{
+  color: white;
+  background: #c0d3ff;
+  font-family: 'Cinzel', serif;
+  font-family: 'Fredoka', sans-serif;
+}
+span {
+  font-size: 30px;
+}
+#webcam_div, #picture_div {
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#emotion_no1 ,#emotion_no2 
+{
+  color: black;
+}
+.emotion
+{
+  font-size: 40px;
+}
+.name
+{
+  font-size:48px;
+}
+
+.header {
+  border-radius: 25px;
+  width: 60%;
+  font-size: 26px;
+}
+
+label {
+  font-size: 17px;
+  color: black;
+  background-color: white;
+  width: 150px;
+  border-radius: 10px;
+}

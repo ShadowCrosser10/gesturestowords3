@@ -1,0 +1,90 @@
+ 
+<html>
+    <head>
+      <title>Gestures to Words</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+  
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Fredoka&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+  
+        <h1 class="btn btn-info header">Gestures to Words
+          <br>
+          <span>&#9994;</span>
+          <span>&#9995;</span>
+          <span>&#9996;</span>
+          <span>&#9997;</span>
+          <span>&#128070;</span>
+          <span>&#128071;</span>
+        </h1>
+  
+        <br><br>
+  
+        <p style="font-size: 22px;">Make a gesture, and our application will analyze and derive the meaning of it!
+            <br>
+          <br>
+          <b style="color: yellow">Is that a high five?</b>
+          <br>
+          <b style="color: black">Is that a fist bump?</b>
+          <br>
+          <b style="color: red">Is that a handshake?</b>
+          <br>
+          <b style="color: green">We can figure it out!</b>
+          <br>
+        </p>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Webcam: </label>
+          <br><br>
+          <div id="webcam_div"></div>
+          <br><br>
+          <button class="btn btn-warning" onclick="capture()">Capture Image:</button>
+        </div>
+  
+    
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <br><br>
+            <label>Prediction #1: </label>
+          <p id="name_no1" class="name"></p>
+          <p id="emotion_no1" class="emotion"></p>
+          <br><br>
+          <label>Prediction #2: </label>
+          <p id="name_no2" class="name"></p>
+          <p id="emotion_no2" class="emotion"></p>
+          <br><br>
+  
+        </div>
+  
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Picture: </label>
+          <br><br>
+          <div id="picture_div"></div>
+          <br><br><br><br>
+          <button class="btn btn-success" onclick="predict()">Predict Gesture:</button>
+  
+        </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
